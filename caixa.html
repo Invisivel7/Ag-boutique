@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Caixa AG Fashion</title>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel = "stylesheet" href="css/caixa.css">
+	</head>
+    <header class="cabeca">
+        <h1 class="logoTipo"><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1>
+
+        <nav class="menu-opcoes">
+            <ul>
+                <li class="topo"><a href="index.html"><img src="img/menu.png" alt="Menu Itens"></a></li>
+                <li class="topo2"><a href="#"><img src="img/phone_px.png" alt="Contactos da loja" title="927462127 - 92388291"></a></li>
+				<li class="topo"><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>	
+	<body>
+		<div id="principal">
+			<div class="conteudo">
+				<h1 class="display-4">Ótima escolha!</h1>
+				<p class="lead">Obrigado por comprar na AG Fashion! Preencha seus dados para efetivar a compra.</p>
+			</div>	
+			<div class="container-b">
+				<div class="topo">
+					<h2>Sua compra</h2>
+				</div>
+		
+				<div class="corpo">
+					<img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="foto1-verde">
+					<dl>
+						<dt>Produto</dt>
+						<dd>Fuzzy Cardigan</</dd>
+						
+						<dt>Cor</dt>
+						<dd>Verde</dd>
+							
+						<dt>Tamanho</dt>
+						<dd id="tamanho">40</dd>
+							
+						<dt>Preço</dt>
+						<dd id="preco">R$ 129,90</dd>
+					</dl>
+				</div>
+				
+				<div class="corpo">
+					<div class="form-group">
+						<label for="qtd">Quantidade:</label><br>
+						<input type="number" id="qtd" min="1" max="99" value="1" class="form-qtd">
+					</div>
+						
+					<div class="form-group">
+							<label for="total">Total:</label>
+							<output id="total" class="form-total">R$ 129,90</output>
+					</div>
+				
+				</div>
+				
+				<form>
+					<fieldset id="pessoa">
+						<legend>Dados pessoais</legend>
+						<hr>
+						
+						<div class="form-group">
+							<label for="nome">Nome completo: </label><br>
+							<input type="text" class="form-pessoa" id="nome" name="nome" size="50px" autofocus required>
+							<br>
+						
+							<br><label for="email">Email</label><br>
+							<input type="email" class="form-pessoa" id="email" name="email" size="50px" placeholder="email@exemplo.com">
+							<br>
+						
+							<br><label for="cpf">CPF</label><br>
+							<input type="text" class="form-pessoa" id="cpf" name="cpf" size="50px" placeholder="000.000.000-00" required>
+							<br>
+						</div>
+						
+						<div class="form-group">
+							<br><input type="checkbox" id="newsletter" size="50px" value="sim" checked>
+							<label class="custom" for="newsletter">
+								Quero receber Newsletter da AG Fashion
+							</label>
+						</div>
+						
+					</fieldset>
+					<fieldset id="cartao">
+						<legend>Cartão de crédito</legend>
+						<hr>
+						
+						<div class="form-group">
+							<label for="numero-cartao">Número - Cartão</label><br>
+							<input type="text" class="form-cartao" id="numero-cartao" name="numero-cartao" size="50px">
+							<br>
+						
+							<br><label for="bandeira-cartao">Bandeira</label><br>
+							<select class="form-carta" id="bandeira-cartao" width="50px">
+								<option disabled selected>Selecione uma opção...</option>
+								<option value="master">MasterCard</option>
+								<option value="visa">VISA</option>
+								<option value="amex">Multicaixa Express</option>
+							</select>
+							<br>
+						
+							<br><label for="validade-cartao">Validade</label><br>
+							<input type="month" class="form-cartao" id="validade-cartao" name="validade-cartao" size="50px">
+						</div>
+						
+					</fieldset>
+					<button type="submit" class="btn">
+						Confirmar Pedido
+					</button>
+				</form>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/total.js"></script>
+		<script type="text/javascript" src="js/produto.js"></script>
+	</body>
+    <footer>
+        <div class="container">
+            <img src="img/logo-rodape.png" alt="Logo da AG Fashion">
+
+            <ul class="social">
+                <li><a href="http://facebook.com//#">Facebook</a></li>
+                <li><a href="http://twitter.com//#">Twiter</a></li>
+                <li><a href="http://plus.google.com//#">Google+</a></li>
+            </ul>
+
+        </div>
+    </footer>	
+</html>

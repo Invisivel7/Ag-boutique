@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>AG Fashion</title>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilos.css">
+		
+    </head>
+    <header class="cabeca">
+        <h1 class="logoTipo"><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1>
+
+        <nav class="menu-opcoes">
+            <ul>
+                <li class="topo"><a href="index.html"><img src="img/menu.png" alt="Menu Itens"></a></li>
+                <li class="topo2"><a href="#"><img src="img/phone_px.png" alt="Contactos da loja" title="927462127 - 92388291"></a></li>
+				<li class="topo"><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>	
+	<body>
+		<div class="container destaque">
+			<section class="busca">
+				<h2>Busca</h2>
+
+				<form>
+					<input type="text" id="pesquisa" onkeyup="pesquisar()" placeholder="Pesquisa.." title="Digite uma opção de menu">
+				</form>
+			</section>
+			<section class="menu-departamentos">
+				<nav>
+					<ul id="menu">
+						<li><a href="#">Blusas e Camisas</a>
+							<ul>
+								<li><a href="#">Mangas curtas</a></li>
+								<li><a href="#">Mangas comprida</a></li>
+								<li><a href="#">Camisa social</a></li>
+								<li><a href="#">Camisa casual</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Calças</a></li>
+						<li><a href="#">Saias</a></li>
+						<li><a href="#">Vestido</a></li>
+						<li><a href="#">Sapatos</a></li>
+						<li><a href="#">Bolsas e carteiras</a></li>
+						<li><a href="#">Acessórios</a></li>
+					</ul>
+				</nav>
+			</section>
+			<section class="banner-destaque">
+				<figure>
+					<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+				</figure>
+			</section>
+		</div>
+		<div class="container">
+			<!--paineis de novidades e os mais vendidos-->
+			<section class="painel novidades paineis">
+				<h2>Novidades</h2>
+				<ol>
+					<!--Primeiro produto-->
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura1.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura8.png" alt="Miniatura2">
+								<figcaption>Sei la por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura2.png" alt="Miniatura2">
+								<figcaption>Sei la por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura3.png" alt="Miniatura3">
+								<figcaption>Penm por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura10.png" alt="Miniatura10">
+								<figcaption>Trazz por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura11.png" alt="Miniatura11">
+								<figcaption>Quizz por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					
+					<div id="mais">
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura4.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura6.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura7.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura3.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura14.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura15.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					</div>
+				</ol>
+				<button type="button" id="bntMais" onclick="TrocaEstado('mais')">Mostrar mais</button>
+			</section>
+			<section class="painel mais-vendido">
+				<h2>Mais Vendidos</h2>
+				<ol>
+					<!--Primeiro produto-->
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura6.png" alt="Miniatura6">
+								<figcaption>Fuzz Cardigan por R$ 69,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura5.png" alt="Miniatura5">
+								<figcaption>Sei la por R$ 75,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura8.png" alt="Miniatura2">
+								<figcaption>Sei la por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura2.png" alt="Miniatura2">
+								<figcaption>Sei la por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura3.png" alt="Miniatura3">
+								<figcaption>Penm por R$ 103,50</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura1.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					
+					</li>
+					
+					<div id="mais2">
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura9.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura12.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura13.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura14.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura15.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="produto.html">
+							<figure>
+								<img src="img/produtos/miniatura4.png" alt="Miniatura1">
+								<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+							</figure>
+						</a>
+					</li>
+					</div>
+				</ol>
+				<button type="button" id="bntMais2" onclick="TrocarEstado2('mais2')">Mostrar mais</button>
+			</section>
+
+		</div>
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="js/pesquisa.js"></script>
+	</body>	
+    <footer>
+        <div class="container">
+            <img src="img/logo-rodape.png" alt="Logo da AG Fashion">
+
+            <ul class="social">
+                <li><a href="http://facebook.com//#">Facebook</a></li>
+                <li><a href="http://twitter.com//#">Twiter</a></li>
+                <li><a href="http://plus.google.com//#">Google+</a></li>
+            </ul>
+
+        </div>
+    </footer>
+</html>

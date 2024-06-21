@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+#principal {
+	margin-top: 30px;
+}
+
+.conteudo {
+	background-color: #F2F2F2;
+	font-size: 1.3em;
+	text-align: justify;
+	margin: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font: Arial;
+	
+	width: 315px;
+}
+
+.container-b {
+	background-color: #fff;
+	border: 2px solid #f2f2f2;
+	margin: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.topo {
+	background-color: #F2F2F2;
+	border: 1px solid #f2f2f2;
+	font-size: 1.0em;
+	text-align: justify;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+	
+	padding-top: 0.2px;
+	padding-right: 10px;
+	padding-bottom: 0.2px;
+	padding-left: 10px;
+	font: Arial;
+}
+
+.corpo img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.corpo dt {
+	font: bold 0.9em Arial;
+	color: rgb(0,0,0);
+}
+
+.corpo dd {
+	font: Arial;
+	margin-left: -0.8px;
+}
+
+fieldset {
+	margin-top: 20px;
+	border: none;
+}
+
+.btn {
+	color: #FFF;
+	background-color: blue;
+	border: 2px solid #ccc;
+	height: 40px;
+	margin: 20px;
+	font: bold 0.8em Arial;
+	border-radius: 5px;
+	
+	margin-left: 190px;
+	
+}
+	
+legend {
+	font-size: 1.1em;
+}
+.form-group {
+	margin-top: 20px;
+}
+
+.form-pessoa {
+	width: 300px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.form-cartao {
+	width: 300px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.form-carta {
+	width: 307px;
+	height: 35px;
+	border-radius: 5px;
+}
+
+.form-qtd {
+	width: 295px;
+	height: 25px;
+	border-radius: 5px;
+	font: 0.9em Arial;
+}
+
+@media (min-width: 630px){
+	#principal {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.conteudo {
+		width: 320px;
+	}
+	
+	.container-b {
+		width: 300px;	
+	}
+	
+	.corpo img {
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	
+	form {
+		float: right;
+		margin-top: -1080px;
+		margin-right: -500px;
+		font: bold 0.9em Arial;
+	}
+	
+	legend {
+		font-size: 1.4em;
+	}
+	
+	.form-group {
+		width: 350px;
+		
+	}
+	
+	.form-pessoa {
+		width: 345px;
+		height: 25px;
+		border-radius: 5px;
+	}
+
+	.form-cartao {
+		width: 345px;
+		height: 25px;
+		border-radius: 5px;
+	}
+
+	.form-carta {
+		width: 350px;
+		height: 35px;
+		border-radius: 8px;
+	}
+	
+	.btn {
+		font: bold 1.1em Arial;
+	}
+}
